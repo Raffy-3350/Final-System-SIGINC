@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/admin.css">
+      <link rel="shortcut icon" href="image/Icon.png" type="image/x-icon">
+      <title>Employee Attendance Management</title>
+      <script src="js/online-admin.js" defer></script>
+
+</head>
+
+<body>
+      <div class="logo">
+            <img src="image/Icon.png" alt="">
+      </div>
+      <nav class="navbar">
+            <ul>
+                  <li><a href="dash-admin.html" style="font-size: 16px;">Dashboard</a></li>
+                  <li><a href="atnd-admin.html" style="font-size: 16px;">Attendance</a></li>
+                  <li><a href="payroll-admin.html" style="font-size: 16px;">Payroll</a></li>
+                  <li><a href="notif-admin.html" style="font-size: 16px;">Notifications</a></li>
+                  <li><a href="profile-admin.html" style="font-size: 16px;">Profile</a></li>
+            </ul>
+      </nav>
+
+      <div class="container">
+            <h1>Manage Employee</h1>
+
+            <!-- John Doe's Attendance Container -->
+            <div class="employee-container" id="giray-container">
+                  <div class="profile">
+                        <img id="giray-profile-img" src="" alt="Giray Profile Picture">
+                        <span id="giray-name" class="name"></span>
+                  </div>
+                  <button onclick="toggleAttendanceInfo('giray')" class="toggle-button">Informations</button>
+                  <div class="dropdown-container" id="giray-attendance-info" style="display: none;">
+                        <h3>Attendance Summary:</h3>
+                        <div class="attendance-row">
+                              <span class="label">Employee Name:</span>
+                              <span id="giray-employee-name"></span>
+                        </div>
+                        <div class="attendance-row">
+                              <span class="label">Time In:</span>
+                              <span id="giray-time-in"></span>
+                        </div>
+                        <div class="attendance-row">
+                              <span class="label">Time Out:</span>
+                              <span id="giray-time-out"></span>
+                        </div>
+                        <div class="attendance-row">
+                              <span class="label">Late Time:</span>
+                              <span id="giray-late-time"></span>
+                        </div>
+                        <div class="attendance-row">
+                              <span class="label">Overtime:</span>
+                              <span id="giray-overtime"></span>
+                        </div>
+                        <div class="attendance-row">
+                              <span class="label">Deductions:</span>
+                              <span id="giray-deductions"></span>
+                        </div>
+                  </div>
+            </div>
+
+            <!-- Jane Smith's Attendance Container -->
+            <div class="employee-container" id="lacsi-container">
+                  <div class="profile">
+                        <img id="lacsi-profile-img" src="" alt="Lacsi Profile Picture">
+                        <span id="lacsi-name" class="name"></span>
+                  </div>
+                  <button onclick="toggleAttendanceInfo('lacsi')" class="toggle-button">Informations</button>
+                  <div class="dropdown-container" id="lacsi-attendance-info" style="display: none;">
+                        <h3>Attendance Summary:</h3>
+                        <div class="attendance-row">
+                              <span class="label">Employee Name:</span>
+                              <span id="lacsi-employee-name"></span>
+                        </div>
+                        <div class="attendance-row">
+                              <span class="label">Time In:</span>
+                              <span id="lacsi-time-in"></span>
+                        </div>
+                        <div class="attendance-row">
+                              <span class="label">Time Out:</span>
+                              <span id="lacsi-time-out"></span>
+                        </div>
+                        <div class="attendance-row">
+                              <span class="label">Late Time:</span>
+                              <span id="lacsi-late-time"></span>
+                        </div>
+                        <div class="attendance-row">
+                              <span class="label">Overtime:</span>
+                              <span id="lacsi-overtime"></span>
+                        </div>
+                        <div class="attendance-row">
+                              <span class="label">Deductions:</span>
+                              <span id="lacsi-deductions"></span>
+                        </div>
+                  </div>
+            </div>
+
+            <!-- Tom Johnson's Attendance Container -->
+            <div class="employee-container" id="trono-container">
+                  <div class="profile">
+                        <img id="trono-profile-img" src="" alt="Trono Profile Picture">
+                        <span id="trono-name" class="name"></span>
+                  </div>
+                  <button onclick="toggleAttendanceInfo('trono')" class="toggle-button">Informations</button>
+                  <div class="dropdown-container" id="trono-attendance-info" style="display: none;">
+                        <h3>Attendance Summary:</h3>
+                        <div class="attendance-row">
+                              <span class="label">Employee Name:</span>
+                              <span id="trono-employee-name"></span>
+                        </div>
+                        <div class="attendance-row">
+                              <span class="label">Time In:</span>
+                              <span id="trono-time-in"></span>
+                        </div>
+                        <div class="attendance-row">
+                              <span class="label">Time Out:</span>
+                              <span id="trono-time-out"></span>
+                        </div>
+                        <div class="attendance-row">
+                              <span class="label">Late Time:</span>
+                              <span id="trono-late-time"></span>
+                        </div>
+                        <div class="attendance-row">
+                              <span class="label">Overtime:</span>
+                              <span id="trono-overtime"></span>
+                        </div>
+                        <div class="attendance-row">
+                              <span class="label">Deductions:</span>
+                              <span id="trono-deductions"></span>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</body>
+
+</html>

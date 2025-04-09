@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/employee.css">
+      <title>Siglatrolap Innovations Inc</title>
+      <link rel="shortcut icon" href="image/Icon.png" type="image/x-icon">
+</head>
+
+
+<body>
+      <div class="container">
+            <div class="req-head">
+                  <h1 class="req-title">Submit Leave Request</h1>
+                  <form action="" method="POST">
+                        <div class="form-group">
+                              <label for="leave_type" class="form-label">Leave Type</label>
+                              <select name="leave_type" class="form-select" required>
+                                    <option value="vacation">Vacation</option>
+                                    <option value="sick">Sick</option>
+                                    <option value="personal">Personal</option>
+                                    <option value="other">Other</option>
+                              </select>
+                        </div>
+
+                        <div class="form-group">
+                              <label for="start_date" class="form-label">Start Date</label>
+                              <input type="date" name="start_date" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                              <label for="end_date" class="form-label">End Date</label>
+                              <input type="date" name="end_date" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                              <label for="reason" class="form-label">Reason</label>
+                              <textarea name="reason" class="form-textarea" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                              <button type="submit" class="form-button">Submit Request</button>
+                        </div>
+                  </form>
+                  <a href="dash-ee.html" class="return-link">Return to Dashboard</a>
+            </div>
+      </div>
+</body>
+
+</html>
